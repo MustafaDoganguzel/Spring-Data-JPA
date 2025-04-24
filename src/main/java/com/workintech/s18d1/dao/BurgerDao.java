@@ -8,11 +8,11 @@ import java.util.List;
 public interface BurgerDao {
     Burger save(Burger burger);
 
-    Burger findById(Integer id);
+    Burger findById(Long id);
 
     List<Burger> findAll();
 
-    List<Burger> findByPrice(Double price);
+    List<Burger> findByPrice(Integer price);
 
     List<Burger> findByBreadType(BreadType breadType);
 
