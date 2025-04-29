@@ -13,16 +13,16 @@ import lombok.NoArgsConstructor;
 public class Burger {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id;
+    private Long id;
 
     @Column(name = "name")
     private String name;
 
     @Column(name = "price")
-    private double price;
+    private Double price;
 
     @Column(name = "is_vegan")
-    private boolean isVegan;
+    private Boolean isVegan;
 
     @Enumerated(EnumType.STRING)
     private BreadType breadType;
